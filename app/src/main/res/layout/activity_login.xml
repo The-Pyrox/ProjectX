@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        >
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/etPasswordLayout1"
+            android:layout_width="match_parent"
+            android:theme="@style/EditTextHint"
+            android:textColorHint="@color/ButtonBackground"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            app:passwordToggleTint="@color/ButtonBackground"
+            android:layout_marginBottom="10dp">
+
+
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editText_login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/ButtonBackground"
+                android:hint="Email"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:inputType="textWebEmailAddress"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/etPasswordLayout2"
+            android:theme="@style/EditTextHint"
+            android:textColorHint="@color/ButtonBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/ButtonBackground"
+            android:layout_marginBottom="10dp">
+
+
+
+            <android.support.design.widget.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+
+                android:paddingLeft="10dp"
+                android:inputType="textPassword"
+                android:textColor="@color/ButtonBackground"
+                android:textSize="16sp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+
+                android:id="@+id/editText_login_password"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+
+                android:text=" Remember Me"
+                android:layout_marginLeft="25dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/ButtonBackground"
+                android:buttonTint="@color/ButtonBackground"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:id="@+id/checkBox" />
+
+            <Button
+                android:text="Log in"
+                android:background="@drawable/button_background"
+                android:layout_width="match_parent"
+                android:textColor="@color/ButtonBackground"
+
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/button_login_login" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="Forgot Password?"
+
+                android:layout_width="match_parent"
+                android:textColor="@color/ButtonBackground"
+                android:textAllCaps="false"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_login_forgot"
+                />
+        </LinearLayout>
+        <View
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <Button
+            android:text="Dont Have an Account ? Signup here"
+            android:textColor="@color/ButtonBackground"
+
+            android:layout_width="match_parent"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+
+            android:id="@+id/button_login_signup"
+            />
+        <Button
+            android:text="Having Trouble Signing in ?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ButtonBackground"
+            android:textAllCaps="false"
+            android:background="?android:attr/selectableItemBackground"
+            android:id="@+id/button_login_trouble"
+            />
+    </LinearLayout>
+</ScrollView>
