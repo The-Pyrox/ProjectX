@@ -1,3 +1,41 @@
 <resources>
     <string name="app_name">Project X</string>
+    <string name="termsandconditions">By Signing Up , You agree to our <a href="http://kriger.in/blog/terms-and-conditions/">terms and conditions.</a></string>
+
+
+    <string-array name="faculty_array">
+        <item>Select Faculty</item>
+        <item>FTE, MSU</item>
+    </string-array>
+
+
+    <string-array name="department_array">
+        <item>Select Department</item>
+        <item>CSE</item>
+    </string-array>
+
+    <string-array name="signuptype_array">
+        <item>Select Designation</item>
+        <item>HOD</item>
+        <item>Teaching Staff Members</item>
+        <item>Non Teaching Staff Members</item>
+        <item>Students</item>
+    </string-array>
+
+    <string-array name="semester_array">
+        <item>Select Semester</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+
+
+    </string-array>
+    <string name="title_activity_main">MainActivity</string>
+
+
 </resources>

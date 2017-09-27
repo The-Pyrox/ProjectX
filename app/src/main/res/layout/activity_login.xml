@@ -109,16 +109,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <Button
-                android:text="Forgot Password?"
-
-                android:layout_width="match_parent"
-                android:textColor="@color/ButtonBackground"
-                android:textAllCaps="false"
-                android:background="?android:attr/selectableItemBackground"
-                android:layout_height="wrap_content"
-                android:id="@+id/button_login_forgot"
-                />
         </LinearLayout>
         <View
             android:layout_marginTop="20dp"
@@ -137,14 +127,6 @@
 
             android:id="@+id/button_login_signup"
             />
-        <Button
-            android:text="Having Trouble Signing in ?"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/ButtonBackground"
-            android:textAllCaps="false"
-            android:background="?android:attr/selectableItemBackground"
-            android:id="@+id/button_login_trouble"
-            />
+
     </LinearLayout>
 </ScrollView>
