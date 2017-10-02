@@ -18,6 +18,8 @@ public class NewPost extends AppCompatActivity {
     private Button btn_send;
     private EditText edit_string;
 
+    private EditText frm_date,frm_month,frm_year,to_date,to_month,to_year;
+
 
     private String target;
 
@@ -29,6 +31,14 @@ public class NewPost extends AppCompatActivity {
 
         edit_string = (EditText) findViewById(R.id.edit_string);
         btn_send = (Button) findViewById(R.id.btn_submit);
+        frm_date = (EditText) findViewById(R.id.frm_date);
+        frm_month = (EditText) findViewById(R.id.frm_month);
+        frm_year = (EditText) findViewById(R.id.frm_year);
+        to_date = (EditText) findViewById(R.id.to_date);
+        to_month = (EditText) findViewById(R.id.to_month);
+        to_year = (EditText) findViewById(R.id.to_year);
+
+
 
         btn_send.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,6 +66,8 @@ public class NewPost extends AppCompatActivity {
         String key = FirebaseDatabase.getInstance().getReference().push().getKey();
         FirebaseDatabase.getInstance().getReference().child("Posts").child(key).child("title").setValue(edit_string.getText().toString());
         FirebaseDatabase.getInstance().getReference().child("Posts").child(key).child("target").setValue(target);
+        FirebaseDatabase.getInstance().getReference().child("Posts").child(key).child("from").setValue("20"+frm_year.getText().toString()+frm_month.getText().toString()+frm_date.getText().toString());
+        FirebaseDatabase.getInstance().getReference().child("Posts").child(key).child("to").setValue("20"+to_year.getText().toString()+to_month.getText().toString()+to_date.getText().toString());
 
         Intent intent = new Intent(getApplicationContext(),HomeActivity.class);
         startActivity(intent);
